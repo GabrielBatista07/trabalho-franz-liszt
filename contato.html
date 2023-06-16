@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    
+    <title>Contato</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script>
+         function validar() {
+
+                var nome = contato.nome.value;
+                var endereco = contato.endereco.value;
+                var telefone = contato.telefone.value;
+                var cpf = contato.cpf.value;
+                var rg = contato.rg.value;
+
+                if (contato.nome.value == "") {
+                    alert('insira o seu lindo nome ;)');
+                    contato.nome.focus();
+                    return false;
+                }
+
+                if (contato.endereco.value == "") {
+                    alert('insira o seu endereço ');
+                    contato.endereco.focus();
+                    return false;
+                }
+
+                if (contato.telefone.value == "") {
+                    alert('insira o seu número ');
+                    contato.telefone.focus();
+                    return false;
+                }
+
+                if (contato.cpf.value == "") {
+                    alert('insira o seu cpf ');
+                    contato.cpf.focus();
+                    return false;
+                }
+
+                if (contato.rg.value == "") {
+                    alert('insira o seu rg ');
+                    contato.rg.focus();
+                    return false;
+                }
+
+                }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu1"><a href="index.html">Home</a></div>
+
+            <div class="menu"><a href="historia.html">História</a></div>
+
+            <div class="menu"><a href="musicas.html">Músicas</a></div>
+
+            <div class="menu"><a href="galeria.html">Galeria</a></div>
+
+            <div class="menu"><a href="contato.html">Contato</a></div>
+        </nav>
+</header>
+
+<div class="borda">
+</div>
+
+        <div class="titulo">
+            <h2>Contate nossa equipe!</h2>
+        </div>
+
+<div class="formulario">
+    <form name="contato" action="parabens.html" method="post">
+
+        <div class="div-interna">
+            Usuário: &nbsp; &nbsp;
+            <!--Caracter invisível em código html-->
+            <input type="text" name="nome" placeholder="&nbsp;&nbsp;Gabriel da Silva Batista">
+        </div>
+
+
+        <div class="div-interna">
+            Endereço: &nbsp;
+            <input type="text" name="endereco" placeholder="&nbsp;&nbsp;Rua Mario lesso">
+        </div>
+
+
+        <div class="div-interna">
+            Telefone: &nbsp;&nbsp;
+            <!--Caracter invisível em código html-->
+            <input type="text" name="telefone" placeholder="&nbsp;&nbsp;19-99224 7975">
+        </div>
+
+
+        <div class="div-interna">
+            CPF: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!--Caracter invisível em código html-->
+            <input type="text" name="cpf" placeholder="&nbsp;&nbsp;xxx.xxx.xxx-xx">
+        </div>
+
+
+        <div class="div-interna">
+
+            RG: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!--Caracter invisível em código html-->
+            <input type="text" name="rg" placeholder="&nbsp;&nbsp;xxxxxxx">
+        </div>
+        
+
+        <div class="div-interna">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <!--Caracter invisível em código html-->
+            <input type="submit" onclick="return validar()" value="Enviar">
+        </div>
+
+
+
+
+        <div class="div-interna" align="center">
+            <textarea rows="10"
+                cols="25"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        ( seus dados não serão enviados a lugar algum. esse formulário é apenas gráfico, não sendo linkado a um banco de dados. Apesar de mostrar que foi enviado.)</textarea>
+        </div>
+
+
+
+        
+    </form>
+
+</div>
+
+
+</body>
+</html>

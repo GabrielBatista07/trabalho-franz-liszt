@@ -1,0 +1,297 @@
+body{       
+
+    margin-top: 0px;                    /* Definição do layout do body*/
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-left: 0px;
+}
+
+header{                             /* definição do "background da barra de navegação*/
+        top: 0px;                               
+        position: fixed;    
+        background-color: #4d4d4d7e;
+        width: 100%;
+        height: 100px; 
+        z-index: 150; 
+}
+
+
+
+.borda{                     /* definição da borda lateral estilizada*/
+    position: fixed;
+    width: 100px;
+    height: 100%;
+    background-color: #CCCCCC;
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    
+}
+
+.direitos{
+    position: fixed;
+    margin: auto;
+    bottom: 0 ;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.788);
+    color: black;
+    text-align: center;
+    z-index: 0;
+}
+
+
+.menu1{                         /* definição da barra de navegação ( HOME )*/
+        display: inline-block;
+        width: 75px;
+        color: black;
+        margin-top: 45px;
+        font-size: 0.60cm;
+        margin-left: 250px;
+
+
+}
+
+.menu{                          /* definição da barra de navegação */
+    display: inline-block;
+    width: 75px;
+    margin-top: 45px   ;
+    font-size: 0.60cm;
+    margin-left: 75px;
+}
+
+a{                              /* Definição dos links*/
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+.abstract{                       /* Definição do bloco de texto inserido no home */
+        position: absolute;
+        display: inline-block;
+        width: 450px;
+        height: 450px;
+        font-family: Arial;
+        top: 20%;
+        margin-left: 20%;
+
+
+}
+
+.abstract2{                     
+    position: absolute;
+    display: inline-block;
+    width: 450px;
+    height: 450px;
+    font-family: Arial;
+    top: 20%;
+    margin-left: 325px;
+
+
+}
+
+.abstract3{
+    position: absolute;
+    display: inline-block;
+    width: 450px;
+    height: 450px;
+    font-family: Arial;
+    top: 100%;
+    padding-left: 950px;
+}
+
+.abstract4{                     /* Definição dos blocos de textos inseridos na página música */
+    position: absolute;
+    display: inline-block;
+    width: 450px;
+    height: 450px;
+    font-family: Arial;
+    top: 150px;
+    padding-left: 10%;
+    font-size: 0.45cm;
+}
+
+.abstract5{                     /* Definição dos blocos de textos inseridos na página música */
+    display: flex;
+    width: 925px;
+    height: 450px;
+    font-family: Arial;
+    padding-top: 0px;
+    padding-left: 20%;
+    font-size: 0.45cm;
+}
+
+
+
+
+.img1{                            /* Imagem HOME*/
+    display: inline-block;
+    background-image: url(icon/img1.jfif);
+    background-size: cover;
+    width: 275px;
+    height: 375px;
+    border-radius: 50px;
+    margin-top: 15%;
+    margin-left: 1050px;
+}
+
+.img1:hover{                    /* Definição do efeito da imagem HOME*/
+    border-radius: 150px;
+    transition: 1s;
+}
+
+.img1:not(:hover) {             /* Definição do efeito da imagem HOME*/
+    transition: 1s;
+}
+
+.img2{                          /* Definição do efeito da imagem MUSICAS*/
+    display: inline-block;
+    background-image: url(icon/musicas.jpeg);
+    background-size: cover;
+    width: 325px;
+    height: 325px;
+    border-radius: 50px;
+    margin-top: 175px;
+    margin-left: 20%;
+}
+
+.img2:hover{                    /* Definição do efeito da imagem MUSICAS*/
+    border-radius: 150px;
+    transition: 1s;
+}
+
+.img2:not(:hover) {             /* Definição do efeito da imagem MUSICAS*/
+    transition: 1s;
+}
+
+.familia{
+    background-image: url(icon/familia.jfif);
+    background-size: cover;
+    width: 425px;
+    height: 425px;
+    border-radius: 50px;
+    margin-top: 15%;
+    margin-left: 60%;
+}
+
+.carreira-img{
+    background-image: url(icon/gif.jfif);
+    background-size: cover;
+    width: 425px;
+    height: 425px;
+    border-radius: 50px;
+    margin-top: 200px;
+    margin-left: 20%;
+}
+
+.errata-espaco{
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.audio1{
+    display: inline-block;
+    width: 275px;
+    height: 275px;
+    border-radius: 50px;
+    padding-top: 15px;
+    margin-left: 20%;
+}
+
+.galeria{
+    display: inline-block;
+    top: 35%;
+    width: 75%;
+    height: 75%;
+    margin: 20%;
+}
+
+.galeria1{
+    background-image: url(icon/galeria/galeria1.jpg);
+    background-size: cover;
+    border-radius: 50px;
+}
+
+.galeria2{
+    
+}
+
+
+.galeria3{
+    
+}
+
+
+.galeria4{
+    
+}
+
+
+.galeria5{
+    
+}
+
+
+.galeria6{
+    
+}
+
+
+
+.titulo{
+    margin-left: 25%;
+    align-items: center;
+    margin-top: 10%;
+}
+
+ /*formatação do formulário (contato) */
+ .formulario{
+    position: absolute;
+    display: inline-block;
+    width: 450px;
+    height: 450px;
+    font-family: Arial;
+    top: 275px;
+    margin-left: 25%;
+    }
+  
+textarea{
+    resize: none;
+    position: absolute;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    font-family: Arial;
+    top: 0px;
+    margin-left: 250px;
+    border-radius: 25px;
+    margin-bottom: 300px;
+}
+
+textarea:hover{
+    background-color: #c4bebe; /* quando passa o mouse em cima*/
+    transition: 0.3s;
+  }
+  
+  
+  
+  input{
+    border-radius: 25px;
+    width:150px;
+  }
+  
+  input:hover{
+    background-color: #c4bebe;
+    transition: 0.3s;
+  }
+  
+  .div-interna{
+    padding: 7.5px;
+  }
+    
+
