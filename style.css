@@ -77,8 +77,6 @@ a{                              /* Definição dos links*/
         font-family: Arial;
         top: 20%;
         margin-left: 20%;
-
-
 }
 
 .abstract2{                     
@@ -88,7 +86,7 @@ a{                              /* Definição dos links*/
     height: 450px;
     font-family: Arial;
     top: 20%;
-    margin-left: 325px;
+    margin-left: 20%;
 
 
 }
@@ -99,8 +97,8 @@ a{                              /* Definição dos links*/
     width: 450px;
     height: 450px;
     font-family: Arial;
-    top: 100%;
-    padding-left: 950px;
+    top: 130%;
+    padding-left: 65%;
 }
 
 .abstract4{                     /* Definição dos blocos de textos inseridos na página música */
@@ -124,7 +122,23 @@ a{                              /* Definição dos links*/
     font-size: 0.45cm;
 }
 
+.abstract6{       
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    font-family: Arial;
+    top: 200%;
+    margin-left: 20%;
+}
 
+.abstract7{       
+    position: absolute;
+    width: 925px;
+    height: 450px;
+    font-family: Arial;
+    top: 260%;
+    margin-left: 20%;
+}
 
 
 .img1{                            /* Imagem HOME*/
@@ -135,7 +149,7 @@ a{                              /* Definição dos links*/
     height: 375px;
     border-radius: 50px;
     margin-top: 15%;
-    margin-left: 1050px;
+    margin-left: 65%;
 }
 
 .img1:hover{                    /* Definição do efeito da imagem HOME*/
@@ -174,7 +188,7 @@ a{                              /* Definição dos links*/
     height: 425px;
     border-radius: 50px;
     margin-top: 15%;
-    margin-left: 60%;
+    margin-left: 63%;
 }
 
 .carreira-img{
@@ -183,13 +197,23 @@ a{                              /* Definição dos links*/
     width: 425px;
     height: 425px;
     border-radius: 50px;
-    margin-top: 200px;
+    margin-top: 10%;
     margin-left: 20%;
+}
+
+.love-dream{
+    background-image: url(icon/galeria/galeria1.jpg);
+    background-size: cover;
+    width: 325px;
+    height: 325px;
+    border-radius: 50px;
+    margin-top: 2.25%;
+    margin-left: 63%;
 }
 
 .errata-espaco{
     bottom: 0;
-    height: 60px;
+    height: 200px;
     width: 100%;
     background-color: rgba(240, 248, 255, 0);
 }
@@ -199,78 +223,54 @@ a{                              /* Definição dos links*/
     width: 275px;
     height: 275px;
     border-radius: 50px;
-    padding-top: 15px;
+    padding-top: 0px;
     margin-left: 20%;
 }
 
-.galeria{
+
+.audio2{
     display: inline-block;
-    top: 35%;
-    width: 75%;
-    height: 75%;
-    margin: 20%;
-}
-
-.galeria1{
-    background-image: url(icon/galeria/galeria1.jpg);
-    background-size: cover;
+    width: 275px;
+    height: 275px;
     border-radius: 50px;
-}
-
-.galeria2{
-    
-}
-
-
-.galeria3{
-    
+    margin-top: 25%;
+    margin-left: 20%;
 }
 
 
-.galeria4{
-    
+
+table{
+    height: 40%;
+
 }
-
-
-.galeria5{
-    
-}
-
-
-.galeria6{
-    
-}
-
-
 
 .titulo{
-    margin-left: 25%;
+    margin-left: 43%;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 8%;
 }
 
  /*formatação do formulário (contato) */
  .formulario{
-    position: absolute;
-    display: inline-block;
-    width: 450px;
-    height: 450px;
+    width: 350px;
+    height: 490px;
     font-family: Arial;
-    top: 275px;
-    margin-left: 25%;
+    margin-left: 40%;
+    border-radius: 50px;
+    background-color: #CCCCCC;
+    align-items: center;
     }
   
+.div-externa{
+    align-items: center;
+    padding-left: 35px;
+}
 textarea{
     resize: none;
-    position: absolute;
-    display: inline-block;
     width: 250px;
-    height: 250px;
+    height: 200px;
     font-family: Arial;
-    top: 0px;
-    margin-left: 250px;
     border-radius: 25px;
-    margin-bottom: 300px;
 }
 
 textarea:hover{
