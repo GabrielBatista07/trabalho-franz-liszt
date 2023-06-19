@@ -41,6 +41,11 @@ header{                             /* definição do "background da barra de na
     z-index: 0;
 }
 
+.seta{
+    position: fixed;
+    margin-top: 700px;
+    margin-left: 35px;
+}
 
 .menu1{                         /* definição da barra de navegação ( HOME )*/
         display: inline-block;
@@ -97,7 +102,7 @@ a{                              /* Definição dos links*/
     width: 450px;
     height: 450px;
     font-family: Arial;
-    top: 130%;
+    top: 115%;
     padding-left: 65%;
 }
 
@@ -127,7 +132,7 @@ a{                              /* Definição dos links*/
     width: 450px;
     height: 450px;
     font-family: Arial;
-    top: 200%;
+    top: 160%;
     margin-left: 20%;
 }
 
@@ -136,7 +141,7 @@ a{                              /* Definição dos links*/
     width: 925px;
     height: 450px;
     font-family: Arial;
-    top: 260%;
+    top: 210%;
     margin-left: 20%;
 }
 
@@ -241,6 +246,7 @@ a{                              /* Definição dos links*/
 
 table{
     height: 40%;
+    margin-top: 1%;
 
 }
 
