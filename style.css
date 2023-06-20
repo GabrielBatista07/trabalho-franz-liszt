@@ -6,10 +6,16 @@ body{
     margin-left: 0px;
 }
 
+.contato{
+    background-image: url(icon/fundo1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 header{                             /* definição do "background da barra de navegação*/
         top: 0px;                               
         position: fixed;    
-        background-color: #4d4d4d7e;
+        background-color: #4d4d4d86;
         width: 100%;
         height: 100px; 
         z-index: 150; 
@@ -21,7 +27,7 @@ header{                             /* definição do "background da barra de na
     position: fixed;
     width: 100px;
     height: 100%;
-    background-color: #CCCCCC;
+    background-color: #ccccccad;
     display: inline-block;
     top: 0px;
     left: 0px;
@@ -265,6 +271,7 @@ table{
     border-radius: 50px;
     background-color: #CCCCCC;
     align-items: center;
+    color: black;
     }
   
 .div-externa{
@@ -289,6 +296,7 @@ textarea:hover{
   input{
     border-radius: 25px;
     width:150px;
+    border-color: rgb(0, 0, 0);
   }
   
   input:hover{
@@ -301,3 +309,11 @@ textarea:hover{
   }
     
 
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 15%;
+    size: 1cm;
+}
