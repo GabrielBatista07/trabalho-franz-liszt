@@ -1,319 +1,302 @@
-body{       
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-    margin-top: 0px;                    /* Definição do layout do body*/
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-left: 0px;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+
 }
 
-.contato{
-    background-image: url(icon/fundo1.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
+html{
+    scroll-behavior:smooth
 }
 
-header{                             /* definição do "background da barra de navegação*/
-        top: 0px;                               
-        position: fixed;    
-        background-color: #4d4d4d86;
-        width: 100%;
-        height: 100px; 
-        z-index: 150; 
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
 }
 
 
+::-webkit-scrollbar {
+    width: 1px; 
+}
 
-.borda{                     /* definição da borda lateral estilizada*/
-    position: fixed;
-    width: 100px;
-    height: 100%;
-    background-color: #ccccccad;
-    display: inline-block;
-    top: 0px;
-    left: 0px;
-    z-index: 100;
+a{
+    text-decoration: none;
+    color: aliceblue;
     
 }
-
-.direitos{
-    position: fixed;
-    margin: auto;
-    bottom: 0 ;
-    width: 100%;
-    height: 60px;
-    background-color: rgba(255, 255, 255, 0.788);
-    color: black;
-    text-align: center;
-    z-index: 0;
-}
-
-.seta{
-    position: fixed;
-    margin-top: 700px;
-    margin-left: 35px;
-}
-
-.menu1{                         /* definição da barra de navegação ( HOME )*/
-        display: inline-block;
-        width: 75px;
-        color: black;
-        margin-top: 45px;
-        font-size: 0.60cm;
-        margin-left: 250px;
-
-
-}
-
-.menu{                          /* definição da barra de navegação */
+.btn{
     display: inline-block;
-    width: 75px;
-    margin-top: 45px   ;
-    font-size: 0.60cm;
-    margin-left: 75px;
+    padding: 15px 60px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background-color: rgb(29, 27, 27);
+    color: aliceblue;
+    border-radius: 8px;
+    transition: background-color 0.5s ease;
 }
 
-a{                              /* Definição dos links*/
-    text-decoration: none;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
+.btn:hover{
+    cursor: pointer;
+    background-color: black;
+    transition: 0.1s;
+
+}
+
+.headline{
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+ /*--------------------------------------------------------------------------------*/   
+#navbar{
+    width: 100%;
+    background-color: rgb(19, 18, 18);
+    color: aliceblue;
+    height:100px;
+    position: fixed;
+}
+
+#navbar-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#navbar-items{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+
+#navbar-items li{
+    padding: 10px;
+}
+
+.logo{
+    font-size: 2rem;
+    margin-left: 25px;
+}
+
+
+ /*--------------------------------------------------------------------------------*/   
+/* Conteudo*/
+
+#text-box {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background: url('img/fundo1.jpg') no-repeat center center/cover;
+}
+  
+
+
+
+
+ /*--------------------------------------------------------------------------------*/   
+/*Fabricantes*/
+
+#fabricantes{
+    
+        width: 100%;
+        background: #eee;
+        color: #111;
+        padding: 50px;
+    }
+    
+    .main-companies {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        padding-left: 30px;
+        margin-top: 80px;
+    }
+    
+    .companies {
+        display: inline-block;
+        width: 60%;
+        
+    }
+
+ /*--------------------------------------------------------------------------------*/   
+    /* About */
+#aplication {
+    width: 100%;
+    background: #222;
+    color: #eee;
+    padding: 50px;
+}
+
+#container-aplication {
+    width: 100%;
+    margin:auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+
+.tips {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.title-aplication {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+ /*--------------------------------------------------------------------------------*/   
+/*Produto*/
+
+#product{
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+#container-product{
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 15px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 0px;
+}
+
+.about-product{
+    display: flex;
+    flex-direction: column;   
+    padding: 20px;
+    color: #333;
     font-weight: bold;
 }
 
 
-.abstract{                       /* Definição do bloco de texto inserido no home */
-        position: absolute;
-        display: inline-block;
-        width: 450px;
-        height: 450px;
-        font-family: Arial;
-        top: 20%;
-        margin-left: 20%;
-}
-
-.abstract2{                     
-    position: absolute;
-    display: inline-block;
-    width: 450px;
-    height: 450px;
-    font-family: Arial;
-    top: 20%;
-    margin-left: 20%;
-
-
-}
-
-.abstract3{
-    position: absolute;
-    display: inline-block;
-    width: 450px;
-    height: 450px;
-    font-family: Arial;
-    top: 115%;
-    padding-left: 65%;
-}
-
-.abstract4{                     /* Definição dos blocos de textos inseridos na página música */
-    position: absolute;
-    display: inline-block;
-    width: 450px;
-    height: 450px;
-    font-family: Arial;
-    top: 150px;
-    padding-left: 10%;
-    font-size: 0.45cm;
-}
-
-.abstract5{                     /* Definição dos blocos de textos inseridos na página música */
-    display: flex;
-    width: 925px;
-    height: 450px;
-    font-family: Arial;
-    padding-top: 0px;
-    padding-left: 20%;
-    font-size: 0.45cm;
-}
-
-.abstract6{       
-    position: absolute;
-    width: 450px;
-    height: 450px;
-    font-family: Arial;
-    top: 160%;
-    margin-left: 20%;
-}
-
-.abstract7{       
-    position: absolute;
-    width: 925px;
-    height: 450px;
-    font-family: Arial;
-    top: 210%;
-    margin-left: 20%;
-}
-
-
-.img1{                            /* Imagem HOME*/
-    display: inline-block;
-    background-image: url(icon/img1.jfif);
-    background-size: cover;
-    width: 275px;
-    height: 375px;
-    border-radius: 50px;
-    margin-top: 15%;
-    margin-left: 65%;
-}
-
-.img1:hover{                    /* Definição do efeito da imagem HOME*/
-    border-radius: 150px;
-    transition: 1s;
-}
-
-.img1:not(:hover) {             /* Definição do efeito da imagem HOME*/
-    transition: 1s;
-}
-
-.img2{                          /* Definição do efeito da imagem MUSICAS*/
-    display: inline-block;
-    background-image: url(icon/musicas.jpeg);
-    background-size: cover;
-    width: 325px;
-    height: 325px;
-    border-radius: 50px;
-    margin-top: 175px;
-    margin-left: 20%;
-}
-
-.img2:hover{                    /* Definição do efeito da imagem MUSICAS*/
-    border-radius: 150px;
-    transition: 1s;
-}
-
-.img2:not(:hover) {             /* Definição do efeito da imagem MUSICAS*/
-    transition: 1s;
-}
-
-.familia{
-    background-image: url(icon/familia.jfif);
-    background-size: cover;
-    width: 425px;
-    height: 425px;
-    border-radius: 50px;
-    margin-top: 15%;
-    margin-left: 63%;
-}
-
-.carreira-img{
-    background-image: url(icon/gif.jfif);
-    background-size: cover;
-    width: 425px;
-    height: 425px;
-    border-radius: 50px;
-    margin-top: 10%;
-    margin-left: 20%;
-}
-
-.love-dream{
-    background-image: url(icon/galeria/galeria1.jpg);
-    background-size: cover;
-    width: 325px;
-    height: 325px;
-    border-radius: 50px;
-    margin-top: 2.25%;
-    margin-left: 63%;
-}
-
-.errata-espaco{
-    bottom: 0;
-    height: 200px;
+ /*--------------------------------------------------------------------------------*/  
+ 
+ 
+ #tipos {
     width: 100%;
-    background-color: rgba(240, 248, 255, 0);
+    background: #222;
+    color: #eee;
+    padding: 50px;
 }
 
-.audio1{
-    display: inline-block;
-    width: 275px;
-    height: 275px;
-    border-radius: 50px;
-    padding-top: 0px;
+#container-tipos {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
     margin-left: 20%;
 }
 
-
-.audio2{
-    display: inline-block;
-    width: 275px;
-    height: 275px;
-    border-radius: 50px;
-    margin-top: 25%;
-    margin-left: 20%;
-}
-
-
-
-table{
-    height: 40%;
-    margin-top: 1%;
-
-}
-
-.titulo{
-    margin-left: 43%;
-    align-items: center;
-    margin-top: 8%;
-}
-
- /*formatação do formulário (contato) */
- .formulario{
-    width: 350px;
-    height: 490px;
-    font-family: Arial;
-    margin-left: 40%;
-    border-radius: 50px;
-    background-color: #CCCCCC;
-    align-items: center;
-    color: black;
-    }
-  
-.div-externa{
-    align-items: center;
-    padding-left: 35px;
-}
-textarea{
-    resize: none;
-    width: 250px;
-    height: 200px;
-    font-family: Arial;
-    border-radius: 25px;
-}
-
-textarea:hover{
-    background-color: #c4bebe; /* quando passa o mouse em cima*/
-    transition: 0.3s;
-  }
-  
-  
-  
-  input{
-    border-radius: 25px;
-    width:150px;
-    border-color: rgb(0, 0, 0);
-  }
-  
-  input:hover{
-    background-color: #c4bebe;
-    transition: 0.3s;
-  }
-  
-  .div-interna{
-    padding: 7.5px;
-  }
-    
-
-h1{
+.about-tipos {
     display: flex;
+    flex-direction: column;
+    background: #333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+
+
+
+.direitos{
+    margin-bottom: 30px;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.685);
+    color: black;
     justify-content: center;
     align-items: center;
-    color: white;
-    margin-top: 15%;
-    size: 1cm;
+    margin-left: 38%;
 }
+
+h5{
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 768px){ /*SÃ³ mudei o display grid para block, afim de empilhÃ¡-los*/
+
+/*-----------------------------------------------------------------*/    
+    #container-aplication {
+        width: 100%;
+        margin:auto;
+        margin-top: 20px;
+        display: block;
+    }
+
+    .tips {
+        display: block;
+        background: #333;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    .title-aplication {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+
+/*-----------------------------------------------------------------*/
+
+
+    #container-product{
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 15px;
+        margin-top: 10px;
+        display: block;
+    }
+    
+    .about-product{
+        display: block;
+        padding: 20px;
+        color: #333;
+        font-weight: bold;
+    }
+
+
+/*-----------------------------------------------------------------*/
+    
+#container-tipos {
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    margin-left: 2%;
+}
+
+.about-tipos {
+    display: block;
+    background: #333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+  }
